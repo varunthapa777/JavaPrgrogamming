@@ -1,0 +1,16 @@
+1. Resource Sharing : multiple thread in stack can access shared object in the heap.
+2. Critical Section : Its a part of process which try to access the shared resource.
+3. Mutual Exclusion : only one thread going to the critcal section at a time.
+
+//system to take care Mutual Exclusion
+//Old Methods when the os is introduced
+4. Locking/Mutex : thread puts a lock (mutex = 1) to shared object and other threads can't access it.    
+    drawback/problem : 
+5. Semophore :
+
+//Latest Method
+6. Monitor : we now used in Java Multi Threading
+
+
+7. Race Condition
+8. Inter-Thread communication

@@ -1,3 +1,4 @@
+package Java_Basic;
 class Method{
 
     static void printHello(String name){

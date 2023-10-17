@@ -37,13 +37,19 @@ public class ThreadMethods {
         // System.out.println("Alive: "+t.isAlive());
 
         //daemon 
-        t.setDaemon(true);
+        // t.setDaemon(true);
         t.start();
 
         // try{Thread.sleep(100);}catch(Exception e){}
+        
+        
         //join
+        //Thread mainThread = Thread.currentThread();
+        //try{mainThread.join();}catch(Exception e){}
 
-        Thread mainThread = Thread.currentThread();
-        try{mainThread.join();}catch(Exception e){}
+
+        //yield : gives more time to the thread to run
+        // Thread.yield();
+
     }
 }
