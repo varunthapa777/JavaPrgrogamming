@@ -58,5 +58,7 @@ public class ArrayDemo {
             System.out.print(e);
         }
         System.out.println();
+
+        sc.close();
     }
 }
