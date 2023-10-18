@@ -14,5 +14,5 @@
 it will lock the Thread by it self;
 
 
-7. Race Condition
+7. Race Conditio
 8. Inter-Thread communication
