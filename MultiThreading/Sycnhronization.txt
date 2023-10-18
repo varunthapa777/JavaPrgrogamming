@@ -4,12 +4,13 @@
 
 //system to take care Mutual Exclusion
 //Old Methods when the os is introduced
-4. Locking/Mutex : thread puts a lock (mutex = 1) to shared object and other threads can't access it.    
-    drawback/problem : 
-5. Semophore :
+4. Locking/Mutex : thread puts a lock (mutex = 1) to shared object and other threads can't access it.
+    
+5. Semophore : It is a unix os method, In this we use two function wait() and signal() by which we achieve sychronization. 
 
-//Latest Method
-6. Monitor : we now used in Java Multi Threading
+
+//Latest Method used in java
+6. Monitor : ga
 
 
 7. Race Condition
