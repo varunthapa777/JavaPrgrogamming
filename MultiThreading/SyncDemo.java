@@ -2,13 +2,14 @@ package MultiThreading;
 
 class MyData{
 
-    synchronized public void display(String str){
-// sychronized(this){
+ synchronized public void display(String str){
+  
         for(int i=0; i< str.length(); i++){
 
-            System.out.println(str.charAt(i));
+            System.out.print(str.charAt(i));
+            try{Thread.sleep(100);}catch(Exception e){}
         }
-        //}
+        
     }
 }
 
@@ -20,7 +21,7 @@ class MyThread1 extends Thread{
 
     public void run(){
 
-        d.display("Hello World ");
+        d.display("Hello World");
     }
 }
 class MyThread2 extends Thread{
