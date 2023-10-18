@@ -3,11 +3,12 @@ package MultiThreading;
 class MyData{
 
     synchronized public void display(String str){
-
+// sychronized(this){
         for(int i=0; i< str.length(); i++){
 
             System.out.println(str.charAt(i));
         }
+        //}
     }
 }
 
