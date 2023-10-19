@@ -20,7 +20,7 @@ class WhiteBoard
         text=t;
         count=numberOfStudents;
         notifyAll();
-        try{Thread.sleep(1000);}catch(InterruptedException e){}
+       
         
     }
     synchronized public String read()
@@ -33,7 +33,6 @@ class WhiteBoard
         count--;
         if(count==0)
         notify();
-        try{Thread.sleep(1000);}catch(InterruptedException e){}
         return t;
     }
     
