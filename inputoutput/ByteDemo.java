@@ -1,8 +1,6 @@
 package inputoutput;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.FileOutputStream;
+import java.io.*;
 
 public class ByteDemo {
     
