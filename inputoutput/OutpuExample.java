@@ -1,4 +1,4 @@
-package filesystem;
+package inputoutput;
 
 import java.io.FileOutputStream;
 
