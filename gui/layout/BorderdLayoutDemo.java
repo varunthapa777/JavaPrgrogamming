@@ -34,7 +34,7 @@ class BFrame extends Frame{
     }
 }
 
-public class BorderedLayout {
+public class BorderdLayoutDemo {
     
     public static void main(String[] args) {
          
