@@ -35,17 +35,18 @@ public class MultiReverseEcho extends Thread{
     public static void main(String[] args) throws Exception {
         
 
-        ServerSocket ss = new ServerSocket(2000);
-        Socket stk;
-        int count =1 ;
-        
-        do{
-            stk = ss.accept();
-            System.out.println("Client Connected: "+count++);
-            MultiReverseEcho mre = new MultiReverseEcho(stk);
-            mre.start();
+        try (ServerSocket ss = new ServerSocket(2000)) {
+            Socket stk;
+            int count =1 ;
+            
+            do{
+                stk = ss.accept();
+                System.out.println("Client Connected: "+count++);
+                MultiReverseEcho mre = new MultiReverseEcho(stk);
+                mre.start();
 
-        }while(true);
+            }while(true);
+        }catch(Exception e){}
        
 
     }
